@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Flipkart Product Scraper",
+    "version": "1.0",
+    "description": "Scrape product information from Flipkart",
+    "permissions": ["activeTab"],
+    "host_permissions": ["http://localhost:8000/*"],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }

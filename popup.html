@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart Product Scraper</title>
+  <style>
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      width: 800px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Header styling */
+    h1 {
+      color: #0073e6;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    /* Button styling */
+    button {
+      background-color: #0073e6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Result container styling */
+    #result {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Card styling for each product */
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 15px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .card h3 {
+      color: #333;
+      font-size: 1.2em;
+      margin: 0;
+    }
+
+    .card p {
+      color: #555;
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+
+    /* Loading spinner */
+    .loading-spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #ddd;
+      border-top-color: #0073e6;
+      border-radius: 50%;
+      animation: spin 1s infinite linear;
+      margin-top: 20px;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Flipkart Product Scraper</h1>
+  <button id="scrapeButton">Scrape Products</button>
+  
+  <!-- Loading spinner -->
+  <div id="loading" class="loading-spinner" style="display: none;"></div>
+  
+  <!-- Result container -->
+  <div id="result"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
